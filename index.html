@@ -10,9 +10,8 @@
     <link href="https://googleapis.com" rel="stylesheet">
 
     <style>
-        /* CONFIGURACIÓN DEL FONDO GENERAL Y TIPOGRAFÍA */
         body {
-            background-color: #F4EAE1; /* Color de fondo almendra */
+            background-color: #F4EAE1; /
             font-family: 'Montserrat', sans-serif;
             font-size: 16px; 
             color: #333333;
@@ -23,17 +22,17 @@
             min-height: 100vh;
         }
 
-        /* DISEÑO DE LA CABECERA (HEADER) IDÉNTICO A TU IMAGEN */
+    
         header {
-            background-color: #1e3163; /* Fondo azul oscuro */
+            background-color: #1e3163;
             padding: 25px 50px 40px 50px;
             display: flex;
-            justify-content: space-between; /* Título izquierda, menú derecha */
+            justify-content: space-between; 
             align-items: center;
             position: relative;
         }
 
-        /* CURVA DECORATIVA ABAJO DEL HEADER (Estilo Canva) */
+    
         header::after {
             content: "";
             position: absolute;
@@ -47,7 +46,7 @@
         }
 
         .header-titulo {
-            color: #F4EAE1; /* Color almendra para las letras */
+            color: #F4EAE1; 
             margin: 0;
             font-size: 18px;
             font-weight: 700;
@@ -55,7 +54,7 @@
             z-index: 2;
         }
 
-        /* MENÚ DE NAVEGACIÓN A LA DERECHA */
+        
         nav {
             display: flex;
             gap: 30px;
@@ -65,14 +64,14 @@
         nav button {
             background: none;
             border: none;
-            color: #F4EAE1; /* Letras color #f4eae1 */
+            color: #F4EAE1; 
             font-family: 'Montserrat', sans-serif;
             font-size: 14px; 
     font-weight: 400;
             cursor: pointer;
             padding: 5px 0;
             transition: all 0.3s ease;
-            text-transform: uppercase; /* Forzar mayúsculas */
+            text-transform: uppercase; 
         }
 
         nav button:hover, nav button.active {
@@ -80,7 +79,6 @@
             text-shadow: 0px 0px 5px rgba(244, 234, 225, 0.5);
         }
 
-        /* CONTENEDOR PRINCIPAL DE LAS PÁGINAS CORREGIDO (Sin espacio vacío) */
         main {
             max-width: 1000px;
             width: 100%;
@@ -89,7 +87,6 @@
             box-sizing: border-box;
         }
 
-        /* ESTILO PARA LAS PESTAÑAS (Con bordes redondeados de 12px) */
         .seccion-pagina {
             display: none; 
             background-color: #ffffff;
@@ -102,19 +99,17 @@
             display: block; 
         }
 
-        /* TÍTULOS H2 CENTRADOS DE FORMA GENERAL */
         h2 {
             color: #1e3163;
             margin-top: 0;
             padding-bottom: 10px;
-            text-align: center; /* Centrado automático para todos */
+            text-align: center; 
         }
 
         p {
             line-height: 1.6;
         }
 
-        /* PIE DE PÁGINA (FOOTER) */
         footer {
             background-color: #1e3163;
             color: #F4EAE1;
@@ -127,7 +122,6 @@
 </head>
 <body>
 
-    <!-- CABECERA ADAPTADA A TU DISEÑO (FUSIONADA Y RENOMBRADA) -->
     <header>
         <div class="header-titulo">Culturas en Chihuahua</div>
         <nav>
@@ -138,33 +132,31 @@
         </nav>
     </header>
   
-    <!-- CONTENIDO DE LAS PÁGINAS -->
     <main>
         
-        <!-- PESTAÑA 1: INICIO -->
         <section id="inicio" class="seccion-pagina active">
             <h2>Nuestras Raíces Culturales</h2>
             <hr style="background-color: #C84B31; height: 3px; border: none; margin: 20px 0;">
             <style>
   .contenedor-banner {
-    width: 100%;            /* Ocupa todo el ancho del cuadro blanco */
-    text-align: center;     /* Centra la imagen */
-    margin-top: 20px;       /* Separa la foto de la línea roja */
-    margin-bottom: 30px;    /* Separa la foto del texto de abajo */
+    width: 100%;            
+    text-align: center;  
+    margin-top: 20px;      
+    margin-bottom: 30px;   
   }
 
   .contenedor-banner img {
-    width: 100%;            /* Hace que la foto sea responsiva */
-    max-width: 600px;       /* Tamaño ideal para que no se vea gigante */
-    height: auto;           /* Evita que la imagen se deforme o estire */
-    border-radius: 6px;     /* Bordes suavemente redondeados */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra elegante de fondo */
+    width: 100%;            
+    max-width: 600px;       
+    height: auto;           
+    border-radius: 6px;     
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
   }
 </style>
 
-<!-- ESTRUCTURA HTML (Muestra la imagen en la página) -->
+
 <div class="contenedor-banner">
-  <!-- RECUERDA: Cambia "foto_raramuri.jpg" por el nombre exacto de tu archivo -->
+ 
   <img src="Foto introduccion.jpg" alt="Comunidad Rarámuri en Chihuahua">
 </div>
 
@@ -173,128 +165,123 @@
            <p>Por esta razón, además de explorar las tradiciones de estas culturas, en esta página también se presenta una investigación detallada sobre un problema ambiental específico que afecta a nuestra propia comunidad. El propósito de este apartado es analizar a fondo la situación actual, entender mejor las causas del impacto ambiental en la región y proponer posibles soluciones viables que beneficien a todos los habitantes, promoviendo una convivencia justa y equilibrada con nuestro entorno.</p>
         </section>
 
-        <!-- PESTAÑA 2: CULTURAS -->
+        
         <section id="culturas" class="seccion-pagina">
     <h2>Investigación Cultural</h2>
     <hr style="background-color: #C84B31; height: 3px; border: none; margin: 20px 0;">
 
-    <!-- ESTILOS CSS (Controlan la posición a los lados y el tamaño) -->
+  
     <style>
         .bloque-cultura {
             display: flex;
-            align-items: center; /* Alinea el inicio del texto con el inicio de la foto */
+            align-items: center; 
             justify-content: space-between;
-            gap: 30px;               /* Espacio de separación entre texto e imagen */
-            margin-bottom: 40px;     /* Espacio antes de pasar a la siguiente cultura */
+            gap: 30px;               
+            margin-bottom: 40px;     
         }
 
-        /* Invierte el orden para los Tepehuanos: foto a la izquierda, texto a la derecha */
         .bloque-cultura.invertido {
             flex-direction: row-reverse;
         }
 
         .texto-cultura {
             flex: 1;
-            max-width: 65%;          /* El texto ocupa el 65% del espacio */
-            text-align: justify;     /* Alineación justificada y limpia */
+            max-width: 65%;          
+            text-align: justify;    
         }
 
         .texto-cultura p {
-            margin-top: 0;           /* Quita espacios sobrantes arriba */
-            margin-bottom: 15px;     /* Separa los párrafos entre sí */
+            margin-top: 0;          
+            margin-bottom: 15px;   
         }
 
         .foto-cultura {
             flex: 1;
-            max-width: 30%;          /* La foto ocupa el 30% del espacio */
+            max-width: 30%;         
         }
       
         .foto-cultura img {
             width: 100%;
-            height: 280px;           /* Altura fija para dar el formato rectangular/cuadrado vertical */
-            object-fit: cover;       /* Recorta los bordes de la foto limpiamente sin deformarla */
-            border-radius: 6px;      /* Bordes ligeramente redondeados a juego con tu diseño */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Sombra muy sutil */
+            height: 280px;          
+            object-fit: cover;      
+            border-radius: 6px;    
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
         }
 
-        /* Diseño adaptable para celulares */
+     
         @media (max-width: 768px) {
             .bloque-cultura, .bloque-cultura.invertido {
-                flex-direction: column; /* En pantallas chicas se acomoda uno abajo del otro */
+                flex-direction: column; 
             }
             .texto-cultura, .foto-cultura {
-                max-width: 100%;       /* Ocupan todo el ancho de la pantalla móvil */
+                max-width: 100%;       
             }
             .foto-cultura img {
-                height: auto;          /* Recupera su proporción original en celular */
+                height: auto;       
                 margin-top: 10px;
             }
         }
     </style>
 
-    <!-- BLOQUE 1: TARAHUMARAS (Foto a la derecha) -->
+    
     <div class="bloque-cultura">
         <div class="texto-cultura">
             <p><strong>Tarahumaras (Rarámuri):</strong> Los tarahumaras se llaman a sí mismos rarámuri, que significa “corredores a pie” y también “las personas” o “los humanos”. A los mestizos les llaman chabochi, que significa “los que tienen barbas”, y a quienes conviven con ellos y comparten su cultura les dicen napurega rarámuri. Su lengua pertenece a la familia yuto-azteca y está relacionada con otras lenguas indígenas como el concho y el guarojío.</p>
             <p>Los rarámuri habitan en ranchos de la Sierra Tarahumara, donde construyen viviendas con madera, adobe, cantera o piedra, dependiendo de los materiales disponibles en la región. También destacan por sus artesanías, ya que las mujeres elaboran ollas, platos y canastas, mientras que los hombres fabrican violines, arcos, tambores y figuras talladas en madera. Además, ambos tejen cobijas y fajas de lana con figuras geométricas.</p>
         </div>
         <div class="foto-cultura">
-            <!-- RECUERDA: Cambia "tarahumara.jpg" por el nombre de tu archivo -->
+           
             <img src="Foto tarahumaras.jpg" alt="Cultura Tarahumara">
         </div>
     </div>
 
-    <!-- BLOQUE 2: TEPEHUANOS (Foto a la izquierda debido a la clase "invertido") -->
+    
     <div class="bloque-cultura invertido">
         <div class="texto-cultura">
             <p><strong>Tepehuanos (Ódami):</strong> Los tepehuanos, conocidos en Chihuahua como ódami, que significa “la gente”, son uno de los pueblos originarios más antiguos del norte de México. Habitan principalmente en regiones montañosas de la Sierra Tarahumara, donde han conservado gran parte de sus tradiciones, idioma y forma de vida. Antes de la llegada de los españoles vivían en amplias zonas de la Sierra Madre Occidental y sobrevivían gracias a la agricultura, la caza y la recolección. Durante la época colonial resistieron la conquista española y lograron mantenerse en comunidades serranas de difícil acceso.</p>
             <p>La lengua tepehuana pertenece a la familia yuto-nahua y aún es enseñada en varias comunidades para evitar su desaparición. La mayoría de las familias vive en pequeñas comunidades rurales y se dedica a la agricultura, la ganadería, las artesanías y el trabajo forestal. Sus fiestas tradicionales incluyen danzas ceremoniales, música con violín y guitarra, rituales relacionados con la lluvia y las cosechas, además de comidas comunitarias. Actualmente continúan luchando por conservar su cultura, territorio e idioma frente a problemas como la pobreza, la migración y la falta de servicios.</p>
         </div>
         <div class="foto-cultura">
-            <!-- RECUERDA: Cambia "tepehuano.jpg" por el nombre de tu archivo -->
             <img src="Foto tepehuanos.jpg" alt="Cultura Tepehuana">
         </div>
     </div>
-            <!-- === COPIAR ESTO ABAJO DE LOS TEPEHUANOS === -->
-
-<!-- BLOQUE 3: MENONITAS (Foto a la derecha) -->
+            
 <div class="bloque-cultura">
     <div class="texto-cultura">
         <p><strong>Menonitas:</strong> Los menonitas son una comunidad religiosa y cultural fundada en 1527 durante la Reforma Protestante. Su nombre proviene de Menno Simons y se caracterizan por el pacifismo, el bautismo de adultos y una vida basada en la comunidad, el trabajo y la autosuficiencia. Surgieron en los Países Bajos y, debido a persecuciones religiosas, migraron a distintos lugares de Europa, Rusia, Canadá y América Latina. En México, una gran comunidad llegó en 1922 desde Canadá y se estableció principalmente en Chihuahua, especialmente en Cuauhtémoc, donde destacan por sus actividades agrícolas, ganaderas y la producción de lácteos.</p>
         <p>La vida de los menonitas puede variar según la comunidad, ya que algunos grupos conservan costumbres más tradicionales y otros están más integrados a la sociedad moderna. Muchos conservan el Plautdietsch, un dialecto del alemán bajo, como parte de su identidad cultural. Además, valoran la disciplina, la cooperación familiar, la sencillez y la ayuda mutua. También son reconocidos por productos como el queso menonita y por sus aportaciones económicas mediante técnicas de cultivo, producción lechera y comercialización agrícola.</p>
     </div>
     <div class="foto-cultura">
-        <!-- RECUERDA: Cambia "menonitas.jpg" por tu archivo real -->
+    
         <img src="Foto menonitas.jpg" alt="Comunidad Menonita en Chihuahua">
     </div>
 </div>
 
-<!-- BLOQUE 4: GUARIJÍOS (Foto a la izquierda) -->
+
 <div class="bloque-cultura invertido">
     <div class="texto-cultura">
         <p><strong>Guarijíos:</strong> Los guarijíos, también conocidos como macuráwe, son un pueblo indígena que habita principalmente en la Sierra Madre Occidental, entre el suroeste de Chihuahua y el sureste de Sonora. Su lengua pertenece a la familia yuto-nahua y es un elemento importante de su identidad cultural. Se llaman a sí mismos macuráwe o warihó, términos que significan “los que agarran tierra” o “los que andan por la tierra”. Sus tradiciones incluyen fiestas llamadas pahko, acompañadas de música con violines, arpas y percusiones, además de la tuburada, una danza y canto ritual relacionados con la naturaleza y los animales.</p>
         <p>La economía guarijía se basa principalmente en la agricultura y la ganadería a pequeña escala, cultivando maíz, frijol, chile y calabaza. Las mujeres elaboran artesanías con palma, barro y fibras naturales, como cestos, petates y sombreros. Sus viviendas se construyen con materiales naturales como madera, palma, lodo y piedra. Además, mantienen una fuerte relación con la naturaleza y conservan conocimientos de medicina tradicional a base de plantas. Actualmente enfrentan problemas como pobreza, dificultades económicas y acceso limitado a servicios de salud y educación.</p>
     </div>
     <div class="foto-cultura">
-        <!-- RECUERDA: Cambia "guarijios.jpg" por tu archivo real -->
+        
         <img src="Foto guarijios.jpg" alt="Cultura Guarijía">
          </div>
 </div>
-            <!-- === COPIAR DESDE AQUÍ === -->
 
-    <!-- BLOQUE 5: PIMAS (Foto a la derecha) -->
+
     <div class="bloque-cultura">
         <div class="texto-cultura">
             <p><strong>Pimas:</strong> Los pimas bajos de Chihuahua, conocidos como o'ob, poseen una rica herencia cultural en la Sierra Madre Occidental. Habitan principalmente en zonas montañosas de municipios como Temósachic y Madera, donde mantienen una fuerte identidad comunitaria. Su lengua pertenece a la familia yutoazteca y actualmente se encuentra en peligro de desaparición.</p>
             <p>Sus creencias combinan el catolicismo con tradiciones prehispánicas relacionadas con la naturaleza. Una de sus ceremonias más importantes es el Yúmare, un rito sagrado en el que realizan cantos y danzas para agradecer las cosechas y pedir lluvias. Además, viven principalmente de la agricultura de autoconsumo, destacan por sus artesanías en madera y acostumbran compartir el tesgüino, una bebida fermentada de maíz, durante sus celebraciones y festividades.</p>
         </div>
         <div class="foto-cultura">
-            <!-- RECUERDA: Cambia "pimas.jpg" por tu archivo real -->
+            
             <img src="Foto pimas.jpg" alt="Ceremonia tradicional de la cultura Pima">
         </div>
     </div>
 
-    <!-- BLOQUE 6: LEBARÓN (Foto a la izquierda debido a la clase "invertido") -->
+    
     <div class="bloque-cultura invertido">
         <div class="texto-cultura">
             <p><strong>Le Barón:</strong> La Colonia Le Barón es un asentamiento ubicado en el norte de México, en el estado de Chihuahua, fundado originalmente por una rama fundamentalista del mormonismo. Fue establecida alrededor de 1924 por Alma Dayer LeBarón, después de que algunos miembros migraran desde Estados Unidos debido a la prohibición de la poligamia a finales del siglo XIX. Estas familias aprovecharon las políticas de colonización impulsadas por el gobierno de Porfirio Díaz para establecerse en México.</p>
@@ -307,9 +294,7 @@
     </div>
 
 </section>
-<!-- === TERMINA AQUÍ === -->
       
-        <!-- PESTAÑA 3: CONCLUSIÓN -->
         <section id="conclusion" class="seccion-pagina">
             <h2>Conclusión del Proyecto</h2>
             <hr style="background-color: #C84B31; height: 3px; border: none; margin: 20px 0;">
@@ -321,62 +306,60 @@
             </p>
             <p>En conjunto, estas culturas nos muestran que la identidad de Chihuahua es muy variada y especial. Cada grupo, a su manera, ha dejado su huella en el territorio y en la historia, demostrando que es posible convivir, conservar lo propio y enriquecerse mutuamente. Preservar estas tradiciones es cuidar parte de nuestra propia historia y entender mejor el mundo en el que vivimos.
             </p>
-            <!-- === COPIAR ABAJO DEL ÚLTIMO PÁRRAFO DE LA CONCLUSIÓN === -->
+         
 
-<!-- ESTILOS OPTIMIZADOS PARA ESTA FOTO -->
+
 <style>
   .contenedor-foto-conclusion {
     width: 100%;
     text-align: center;
-    margin-top: 35px;     /* Separa la foto del último párrafo */
-    margin-bottom: 15px;  /* Espacio antes del borde inferior de la tarjeta */
+    margin-top: 35px;     
+    margin-bottom: 15px;  
   }
 
   .contenedor-foto-conclusion img {
     width: 100%;
-    max-width: 700px;     /* Tamaño ideal en la pantalla para no saturar */
-    height: auto;         /* Ajuste automático para que las personas se vean completas */
-    border-radius: 6px;   /* Esquinas redondeadas a juego con tu diseño */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra suave elegante */
-  }
+    max-width: 700px;     
+    height: auto;         
+    border-radius: 6px;   
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
 </style>
 
-<!-- ESTRUCTURA DE LA FOTO -->
+
 <div class="contenedor-foto-conclusion">
   <!-- RECUERDA: Cambia "conclusion_chihuahua.jpg" por el nombre exacto de tu archivo -->
   <img src="Foto conclusion.jpg" alt="Unión cultural en Chihuahua">
 </div>
 
-<!-- === TERMINA AQUÍ === -->
           
         </section>
 
-        <!-- PESTAÑA 4: INFORMACIÓN ACADÉMICA -->
+      
         <section id="informacion_academica" class="seccion-pagina">
             <h2>Información Académica</h2>
             <hr style="background-color: #C84B31; height: 3px; border: none; margin: 20px 0;">
-            <!-- ESTILOS PARA LOS LOGOS -->
+           
 <style>
   .zona-logos {
     display: flex;
-    justify-content: space-between; /* Pone uno a la izquierda y otro a la derecha */
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: 25px;            /* Separa los logos de tus datos */
+    margin-bottom: 25px;          
   }
 
   .zona-logos img {
-    height: 150px;                   /* Altura uniforme para ambos */
+    height: 150px;                   
     width: auto;
   }
 </style>
 
-<!-- AQUÍ SE MUESTRAN LOS LOGOS -->
+
 <div class="zona-logos">
-  <!-- Recuerda cambiar "nombre_logo_escuela.jpg" por el tuyo -->
+  
   <img src="Foto escuela.jpg" alt="Logo Colegio de Bachilleres">
   
-  <!-- Recuerda cambiar "nombre_logo_plantel.png" por el tuyo -->
+  
   <img src="Foto plantel.png" alt="Logo Plantel">
 </div>
 
@@ -400,12 +383,12 @@
 
     </main>
 
-    <!-- PIE DE PÁGINA -->
+    
     <footer>
         <p>Fecha de Entrega: 21 de Mayo 2026</p>
     </footer>
 
-    <!-- SCRIPT DE NAVEGACIÓN -->
+    
     <script>
         function cambiarPestana(idSeccion, evento) {
             const secciones = document.querySelectorAll('.seccion-pagina');
