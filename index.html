@@ -10,8 +10,9 @@
     <link href="https://googleapis.com" rel="stylesheet">
 
     <style>
+       
         body {
-            background-color: #F4EAE1; /
+            background-color: #F4EAE1; 
             font-family: 'Montserrat', sans-serif;
             font-size: 16px; 
             color: #333333;
@@ -22,7 +23,7 @@
             min-height: 100vh;
         }
 
-    
+       
         header {
             background-color: #1e3163;
             padding: 25px 50px 40px 50px;
@@ -32,7 +33,7 @@
             position: relative;
         }
 
-    
+       
         header::after {
             content: "";
             position: absolute;
@@ -46,7 +47,7 @@
         }
 
         .header-titulo {
-            color: #F4EAE1; 
+            color: #F4EAE1; /* Color almendra para las letras */
             margin: 0;
             font-size: 18px;
             font-weight: 700;
@@ -67,7 +68,7 @@
             color: #F4EAE1; 
             font-family: 'Montserrat', sans-serif;
             font-size: 14px; 
-    font-weight: 400;
+            font-weight: 400;
             cursor: pointer;
             padding: 5px 0;
             transition: all 0.3s ease;
@@ -79,6 +80,7 @@
             text-shadow: 0px 0px 5px rgba(244, 234, 225, 0.5);
         }
 
+       
         main {
             max-width: 1000px;
             width: 100%;
@@ -87,6 +89,7 @@
             box-sizing: border-box;
         }
 
+        /* ESTILO PARA LAS PESTAÑAS (Con bordes redondeados de 12px) */
         .seccion-pagina {
             display: none; 
             background-color: #ffffff;
@@ -99,6 +102,7 @@
             display: block; 
         }
 
+      
         h2 {
             color: #1e3163;
             margin-top: 0;
@@ -110,290 +114,376 @@
             line-height: 1.6;
         }
 
+       
         footer {
             background-color: #1e3163;
             color: #F4EAE1;
             text-align: center;
-            padding: 15px 0;
+            padding: 20px 40px;
             font-size: 14px;
             margin-top: auto;
+            line-height: 1.8;
+        }
+
+        
+        .portada-logos {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .portada-logos img {
+            max-height: 80px;
+            width: auto;
+        }
+
+        .portada-texto {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .portada-imagen-principal {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 30px auto 0 auto;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
 
+    
+   
     <header>
         <div class="header-titulo">Culturas en Chihuahua</div>
         <nav>
             <button class="active" onclick="cambiarPestana('inicio', event)">INICIO</button>
+            <button onclick="cambiarPestana('introduccion', event)">INTRODUCCIÓN</button>
             <button onclick="cambiarPestana('culturas', event)">CULTURAS</button>
             <button onclick="cambiarPestana('conclusion', event)">CONCLUSIÓN</button>
-            <button onclick="cambiarPestana('informacion_academica', event)">INFORMACIÓN ACADÉMICA</button>
+            <button onclick="cambiarPestana('creditos', event)">CRÉDITOS</button>
         </nav>
     </header>
-  
+
+   
     <main>
-        
+   
         <section id="inicio" class="seccion-pagina active">
-            <h2>Nuestras Raíces Culturales</h2>
+       
+            <div style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                max-width: 800px;
+                margin: 0 auto 30px auto;
+                padding: 10px 0;
+            ">
+             
+                <img src="Foto escuela.jpg" alt="Logo Colegio de Bachilleres" style="height: 100px; width: auto; object-fit: contain;">
+                
+          
+                <img src="Foto plantel.png" alt="Logo Plantel" style="height: 100px; width: auto; object-fit: contain;">
+            </div>
+
+
+            <div class="portada-texto">
+                <h3 style="margin: 0; color: #666; font-size: 1.2rem; letter-spacing: 1px; text-transform: uppercase;">
+                    Colegio de Bachilleres del Estado de Chihuahua
+                </h3>
+                <h4 style="margin: 5px 0 25px 0; color: #888; font-weight: normal; font-size: 1rem;">
+                    Plantel 19
+                </h4>
+                
+                <p style="margin: 0; font-weight: bold; color: #C84B31; letter-spacing: 1px;">
+                    Cultura Digital 2
+                </p>
+            </div>
+
             <hr style="background-color: #C84B31; height: 3px; border: none; margin: 20px 0;">
+            
+            <!-- Título y Subtítulo del Proyecto -->
+            <div style="text-align: center; margin: 30px 0;">
+                <h1 style="color: #1e3163; font-size: 2.5rem; margin: 0 0 10px 0; text-transform: uppercase;">
+                    Culturas en Chihuahua
+                </h1>
+                <p style="font-size: 1.2rem; color: #555; font-style: italic; margin: 0;">
+                    Tradicion, Historia y Legado Regional
+                </p>
+            </div>
+
+            <!-- Espacio para la Imagen Principal -->
             <style>
-  .contenedor-banner {
-    width: 100%;            
-    text-align: center;  
-    margin-top: 20px;      
-    margin-bottom: 30px;   
-  }
-
-  .contenedor-banner img {
-    width: 100%;            
-    max-width: 600px;       
-    height: auto;           
-    border-radius: 6px;     
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-  }
-</style>
-
-
-<div class="contenedor-banner">
- 
-  <img src="Foto introduccion.jpg" alt="Comunidad Rarámuri en Chihuahua">
-</div>
-
-           <p>Los pueblos indígenas de nuestra región han cuidado la tierra y sus ecosistemas durante siglos, gracias a un vasto conjunto de saberes y conocimientos ancestrales que han obtenido al vivir en un contacto íntimo y respetuoso con la naturaleza. Su forma de entender el bosque, los ciclos del agua, la fauna y los recursos naturales no solo define su cosmovisión, sino que les ha permitido mantener un equilibrio armónico con el medio ambiente, protegiendo activamente su entorno de manera sumamente responsable frente a los desafíos del desarrollo moderno.</p>
-           <p>Estos conocimientos y prácticas tradicionales poseen un valor incalculable, especialmente hoy en día, ya que nos enseñan de manera urgente la importancia de respetar la naturaleza, frenar el deterioro ecológico y cuidar con responsabilidad el lugar donde vivimos. La sabiduría de estas comunidades nos recuerda que el bienestar humano está ligado directamente a la salud de la Tierra, ofreciendo valiosas lecciones de sustentabilidad que las sociedades contemporáneas debemos aprender e integrar en nuestra vida diaria.</p>
-           <p>Por esta razón, además de explorar las tradiciones de estas culturas, en esta página también se presenta una investigación detallada sobre un problema ambiental específico que afecta a nuestra propia comunidad. El propósito de este apartado es analizar a fondo la situación actual, entender mejor las causas del impacto ambiental en la región y proponer posibles soluciones viables que beneficien a todos los habitantes, promoviendo una convivencia justa y equilibrada con nuestro entorno.</p>
+                .contenedor-banner {
+                    width: 100%;            
+                    text-align: center;     
+                    margin-top: 20px;       
+                    margin-bottom: 30px;    
+                }
+                .contenedor-banner img {
+                    width: 100%;            
+                    max-width: 600px;       
+                    height: auto;           
+                    border-radius: 6px;     
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+                }
+            </style>
+            
+            <div class="contenedor-banner">
+                <img src="Foto portada.jpg" alt="Imagen representativa de las culturas">
+            </div>
+        </section>
+<!-- CONTINUACIÓN DE LA PESTAÑA 1 (INICIO): CIERRE DE LA PORTADA -->
         </section>
 
-        
+        <!-- PESTAÑA 2: INTRODUCCIÓN (NUEVA SECCIÓN INDEPENDIENTE) -->
+        <section id="introduccion" class="seccion-pagina">
+            <h2>Nuestras Raices Culturales</h2>
+            <hr style="background-color: #C84B31; height: 3px; border: none; margin: 20px 0;">
+            
+            <!-- ESTRUCTURA HTML (Muestra la imagen en la página) -->
+            <div class="contenedor-banner">
+              <!-- RECUERDA: Cambia "Foto introduccion.jpg" por el nombre exacto de tu archivo si cambia -->
+              <img src="Foto introduccion.jpg" alt="Comunidad Rarámuri en Chihuahua">
+            </div>
+
+            <p>Los pueblos indígenas de nuestra región han cuidado la tierra y sus ecosistemas durante siglos, gracias a un vasto conjunto de saberes y conocimientos ancestrales que han obtenido al vivir en un contacto íntimo y respetuoso con la naturaleza. Su forma de entender el bosque, los ciclos del agua, la fauna y los recursos naturales no solo define su cosmovisión, sino que les ha permitido mantener un equilibrio armónico con el medio ambiente, protegiendo activamente su entorno de manera sumamente responsable frente a los desafíos del desarrollo moderno.</p>
+            <p>Estos conocimientos y prácticas tradicionales poseen un valor incalculable, especialmente hoy en día, ya que nos enseñan de manera urgente la importancia de respetar la naturaleza, frenar el deterioro ecológico y cuidar con responsabilidad el lugar donde vivimos. La sabiduría de estas comunidades nos recuerda que el bienestar humano está ligado directamente a la salud de la Tierra, ofreciendo valiosas lecciones de sustentabilidad que las sociedades contemporáneas debemos aprender e integrar en nuestra vida diaria.</p>
+            <p>Por esta razón, además de explorar las tradiciones de estas culturas, en esta página también se presenta una investigación detallada sobre un problema ambiental específico que afecta a nuestra propia comunidad. El propósito de este apartado es analizar a fondo la situación actual, entender mejor las causas del impacto ambiental en la región y proponer posibles soluciones viables que beneficien a todos los habitantes, promoviendo una convivencia justa y equilibrada con nuestro entorno.</p>
+        </section>
+
+        <!-- PESTAÑA 3: CULTURAS -->
         <section id="culturas" class="seccion-pagina">
-    <h2>Investigación Cultural</h2>
-    <hr style="background-color: #C84B31; height: 3px; border: none; margin: 20px 0;">
+            <h2>Investigación Cultural</h2>
+            <hr style="background-color: #C84B31; height: 3px; border: none; margin: 20px 0;">
 
-  
-    <style>
-        .bloque-cultura {
-            display: flex;
-            align-items: center; 
-            justify-content: space-between;
-            gap: 30px;               
-            margin-bottom: 40px;     
-        }
+            <!-- ESTILOS CSS (Controlan la posición a los lados y el tamaño) -->
+            <style>
+                .bloque-cultura {
+                    display: flex;
+                    align-items: center; /* Alinea el inicio del texto con el inicio de la foto */
+                    justify-content: space-between;
+                    gap: 30px;               /* Espacio de separación entre texto e imagen */
+                    margin-bottom: 40px;     /* Espacio antes de pasar a la siguiente cultura */
+                }
 
-        .bloque-cultura.invertido {
-            flex-direction: row-reverse;
-        }
+                /* Invierte el orden para los Tepehuanos: foto a la izquierda, texto a la derecha */
+                .bloque-cultura.invertido {
+                    flex-direction: row-reverse;
+                }
 
-        .texto-cultura {
-            flex: 1;
-            max-width: 65%;          
-            text-align: justify;    
-        }
+                .texto-cultura {
+                    flex: 1;
+                    max-width: 65%;          /* El texto ocupa el 65% del espacio */
+                    text-align: justify;     /* Alineación justificada y limpia */
+                }
 
-        .texto-cultura p {
-            margin-top: 0;          
-            margin-bottom: 15px;   
-        }
+                .texto-cultura p {
+                    margin-top: 0;           /* Quita espacios sobrantes arriba */
+                    margin-bottom: 15px;     /* Separa los párrafos entre sí */
+                }
 
-        .foto-cultura {
-            flex: 1;
-            max-width: 30%;         
-        }
-      
-        .foto-cultura img {
-            width: 100%;
-            height: 280px;          
-            object-fit: cover;      
-            border-radius: 6px;    
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-        }
+                .foto-cultura {
+                    flex: 1;
+                    max-width: 30%;          /* La foto ocupa el 30% del espacio */
+                }
 
-     
-        @media (max-width: 768px) {
-            .bloque-cultura, .bloque-cultura.invertido {
-                flex-direction: column; 
-            }
-            .texto-cultura, .foto-cultura {
-                max-width: 100%;       
-            }
-            .foto-cultura img {
-                height: auto;       
-                margin-top: 10px;
-            }
-        }
-    </style>
+                .foto-cultura img {
+                    width: 100%;
+                    height: 280px;           /* Altura fija para dar el formato rectangular/cuadrado vertical */
+                    object-fit: cover;       /* Recorta los bordes de la foto limpiamente sin deformarla */
+                    border-radius: 6px;      /* Bordes ligeramente redondeados a juego con tu diseño */
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Sombra muy sutil */
+                }
 
-    
-    <div class="bloque-cultura">
-        <div class="texto-cultura">
-            <p><strong>Tarahumaras (Rarámuri):</strong> Los tarahumaras se llaman a sí mismos rarámuri, que significa “corredores a pie” y también “las personas” o “los humanos”. A los mestizos les llaman chabochi, que significa “los que tienen barbas”, y a quienes conviven con ellos y comparten su cultura les dicen napurega rarámuri. Su lengua pertenece a la familia yuto-azteca y está relacionada con otras lenguas indígenas como el concho y el guarojío.</p>
-            <p>Los rarámuri habitan en ranchos de la Sierra Tarahumara, donde construyen viviendas con madera, adobe, cantera o piedra, dependiendo de los materiales disponibles en la región. También destacan por sus artesanías, ya que las mujeres elaboran ollas, platos y canastas, mientras que los hombres fabrican violines, arcos, tambores y figuras talladas en madera. Además, ambos tejen cobijas y fajas de lana con figuras geométricas.</p>
+                /* Diseño adaptable para celulares */
+                @media (max-width: 768px) {
+                    .bloque-cultura, .bloque-cultura.invertido {
+                        flex-direction: column; /* En pantallas chicas se acomoda uno abajo del otro */
+                    }
+                    .texto-cultura, .foto-cultura {
+                        max-width: 100%;       /* Ocupan todo el ancho de la pantalla móvil */
+                    }
+                    .foto-cultura img {
+                        height: auto;          /* Recupera su proporción original en celular */
+                        margin-top: 10px;
+                    }
+                }
+            </style>
+<!-- BLOQUE 1: TARAHUMARAS (Foto a la derecha) -->
+            <div class="bloque-cultura">
+                <div class="texto-cultura">
+                    <p><strong>Tarahumaras (Rarámuri):</strong> Los tarahumaras se llaman a sí mismos rarámuri, que significa “corredores a pie” y también “las personas” o “los humanos”. A los mestizos les llaman chabochi, que significa “los que tienen barbas”, y a quienes conviven con ellos y comparten su cultura les dicen napurega rarámuri. Su lengua pertenece a la familia yuto-azteca y está relacionada con otras lenguas indígenas como el concho y el guarojío.</p>
+                    <p>Los rarámuri habitan en ranchos de la Sierra Tarahumara, donde construyen viviendas con madera, adobe, cantera o piedra, dependiendo de los materiales disponibles en la región. También destacan por sus artesanías, ya que las mujeres elaboran ollas, platos y canastas, mientras que los hombres fabrican violines, arcos, tambores y figuras talladas en madera. Además, ambos tejen cobijas y fajas de lana con figuras geométricas.</p>
+                </div>
+                <div class="foto-cultura">
+                    <!-- RECUERDA: Cambia "Foto tarahumaras.jpg" por el nombre de tu archivo si cambia -->
+                    <img src="Foto tarahumaras.jpg" alt="Cultura Tarahumara">
+                </div>
+            </div>
+
+            <!-- BLOQUE 2: TEPEHUANOS (Foto a la izquierda debido a la clase "invertido") -->
+            <div class="bloque-cultura invertido">
+                <div class="texto-cultura">
+                    <p><strong>Tepehuanos (Ódami):</strong> Los tepehuanos, conocidos en Chihuahua como ódami, que significa “la gente”, son uno de los pueblos originarios más antiguos del norte de México. Habitan principalmente en regiones montañosas de la Sierra Tarahumara, donde han conservado gran parte de sus tradiciones, idioma y forma de vida. Antes de la llegada de los españoles vivían en amplias zonas de la Sierra Madre Occidental y sobrevivían gracias a la agricultura, la caza y la recolección. Durante la época colonial resistieron la conquista española y lograron mantenerse en comunidades serranas de difícil acceso.</p>
+                    <p>La lengua tepehuana pertenece a la familia yuto-nahua y aún es enseñada en varias comunidades para evitar su desaparición. La mayoría de las familias vive en pequeñas comunidades rurales y se dedica a la agricultura, la ganadería, las artesanías y el trabajo forestal. Sus fiestas tradicionales incluyen danzas ceremoniales, música con violín y guitarra, rituales relacionados con la lluvia y las cosechas, además de comidas comunitarias. Actualmente continúan luchando por conservar su cultura, territorio e idioma frente a problemas como la pobreza, la migración y la falta de servicios.</p>
+                </div>
+                <div class="foto-cultura">
+                    <!-- RECUERDA: Cambia "Foto tepehuanos.jpg" por el nombre de tu archivo si cambia -->
+                    <img src="Foto tepehuanos.jpg" alt="Cultura Tepehuana">
+                </div>
+            </div>
+
+            <!-- BLOQUE 3: MENONITAS (Foto a la derecha) -->
+            <div class="bloque-cultura">
+                <div class="texto-cultura">
+                    <p><strong>Menonitas:</strong> Los menonitas son una comunidad religiosa y cultural fundada en 1527 durante la Reforma Protestante. Su nombre proviene de Menno Simons y se caracterizan por el pacifismo, el bautismo de adultos y una vida basada en la comunidad, el trabajo y la autosuficiencia. Surgieron en los Países Bajos y, debido a persecuciones religiosas, migraron a distintos lugares de Europa, Rusia, Canadá y América Latina. En México, una gran comunidad llegó en 1922 desde Canadá y se estableció principalmente en Chihuahua, especialmente en Cuauhtémoc, donde destacan por sus actividades agrícolas, ganaderas y la producción de lácteos.</p>
+                    <p>La vida de los menonitas puede variar según la comunidad, ya que algunos grupos conservan costumbres más tradicionales y otros están más integrados a la sociedad moderna. Muchos conservan el Plautdietsch, un dialecto del alemán bajo, como parte de su identidad cultural. Además, valoran la disciplina, la cooperación familiar, la sencillez y la ayuda mutua. También son reconocidos por productos como el queso menonita y por sus aportaciones económicas mediante técnicas de cultivo, producción lechera y comercialización agrícola.</p>
+                </div>
+                <div class="foto-cultura">
+                    <!-- RECUERDA: Cambia "Foto menonitas.jpg" por tu archivo real si cambia -->
+                    <img src="Foto menonitas.jpg" alt="Comunidad Menonita en Chihuahua">
+                </div>
+            </div>
+
+            <!-- BLOQUE 4: GUARIJÍOS (Foto a la izquierda) -->
+            <div class="bloque-cultura invertido">
+                <div class="texto-cultura">
+                    <p><strong>Guarijíos:</strong> Los guarijíos, también conocidos como macuráwe, son un pueblo indígena que habita principalmente en la Sierra Madre Occidental, entre el suroeste de Chihuahua y el ese de Sonora. Su lengua pertenece a la familia yuto-nahua y es un elemento importante de su identidad cultural. Se llaman a sí mismos macuráwe o warihó, términos que significan “los que agarran tierra” o “los que andan por la tierra”. Sus tradiciones incluyen fiestas llamadas pahko, acompañadas de música con violines, arpas y percusiones, además de la tuburada, una danza y canto ritual relacionados con la naturaleza y los animales.</p>
+                    <p>La economía guarijía se basa principalmente en la agricultura y la ganadería a pequeña escala, cultivando maíz, frijol, chile y calabaza. Las mujeres elaboran artesanías con palma, barro y fibras naturales, como cestos, petates y sombreros. Sus viviendas se construyen con materiales naturales como madera, palma, lodo y piedra. Además, mantienen una fuerte relación con la naturaleza y conservan conocimientos de medicina tradicional a base de plantas. Actualmente enfrentan problemas como pobreza, dificultades económicas y acceso limitado a servicios de salud y educación.</p>
+                </div>
+                <div class="foto-cultura">
+                    <!-- RECUERDA: Cambia "Foto guarijios.jpg" por tu archivo real si cambia -->
+                    <img src="Foto guarijios.jpg" alt="Cultura Guarijía">
+                </div>
+        </div> <!-- Este es el cierre del div de los Guarijíos -->
+
+        <!-- BLOQUE 5: PIMAS (Foto a la derecha) -->
+        <div class="bloque-cultura">
+            <div class="texto-cultura">
+                <p><strong>Pimas:</strong> Los pimas bajos de Chihuahua, conocidos como o'ob, poseen una rica herencia cultural en la Sierra Madre Occidental. Habitan principalmente en zonas montañosas de municipios como Temósachic y Madera, donde mantienen una fuerte identidad comunitaria. Su lengua pertenece a la familia yutoazteca y actualmente se encuentra en peligro de desaparición.</p>
+                <p>Sus creencias combinan el catolicismo con tradiciones prehispánicas relacionadas con la naturaleza. Una de sus ceremonias más importantes es el Yúmare, un rito sagrado en el que realizan cantos y danzas para agradecer las cosechas y pedir lluvias. Además, viven principalmente de la agricultura de autoconsumo, destacan por sus artesanías en madera y acostumbran compartir el tesgüino, una bebida fermentada de maíz, durante sus celebraciones y festividades.</p>
+            </div>
+            <div class="foto-cultura">
+                <img src="Foto pimas.jpg" alt="Ceremonia tradicional de la cultura Pima">
+            </div>
         </div>
-        <div class="foto-cultura">
-           
-            <img src="Foto tarahumaras.jpg" alt="Cultura Tarahumara">
-        </div>
-    </div>
 
-    
-    <div class="bloque-cultura invertido">
-        <div class="texto-cultura">
-            <p><strong>Tepehuanos (Ódami):</strong> Los tepehuanos, conocidos en Chihuahua como ódami, que significa “la gente”, son uno de los pueblos originarios más antiguos del norte de México. Habitan principalmente en regiones montañosas de la Sierra Tarahumara, donde han conservado gran parte de sus tradiciones, idioma y forma de vida. Antes de la llegada de los españoles vivían en amplias zonas de la Sierra Madre Occidental y sobrevivían gracias a la agricultura, la caza y la recolección. Durante la época colonial resistieron la conquista española y lograron mantenerse en comunidades serranas de difícil acceso.</p>
-            <p>La lengua tepehuana pertenece a la familia yuto-nahua y aún es enseñada en varias comunidades para evitar su desaparición. La mayoría de las familias vive en pequeñas comunidades rurales y se dedica a la agricultura, la ganadería, las artesanías y el trabajo forestal. Sus fiestas tradicionales incluyen danzas ceremoniales, música con violín y guitarra, rituales relacionados con la lluvia y las cosechas, además de comidas comunitarias. Actualmente continúan luchando por conservar su cultura, territorio e idioma frente a problemas como la pobreza, la migración y la falta de servicios.</p>
+        <!-- BLOQUE 6: LEBARÓN (Foto a la izquierda) -->
+        <div class="bloque-cultura invertido">
+            <div class="texto-cultura">
+                <p><strong>Le Barón:</strong> La Colonia Le Barón es un asentamiento ubicado en el norte de México, en el estado de Chihuahua, fundado originalmente por una rama fundamentalista del mormonismo. Fue establecida alrededor de 1924 por Alma Dayer LeBarón, después de que algunos miembros migraran desde Estados Unidos debido a la prohibición de la poligamia a finales del siglo XIX. Estas familias aprovecharon las políticas de colonización impulsadas por el gobierno de Porfirio Díaz para establecerse en México.</p>
+                <p>Con el paso de los años, la comunidad experimentó cambios culturales y divisiones religiosas. Actualmente, la poligamia ha disminuido considerablemente entre las nuevas generaciones. La mayoría de sus habitantes poseen doble nacionalidad, mexicana y estadounidense, y utilizan tanto el inglés como el español en su vida diaria. Además, la colonia es reconocida por su importancia agrícola y su desarrollo económico en la región.</p>
+            </div>
+            <div class="foto-cultura">
+                <img src="Foto lebaron.jpg" alt="Comunidad LeBarón en Chihuahua">
+            </div>
         </div>
-        <div class="foto-cultura">
-            <img src="Foto tepehuanos.jpg" alt="Cultura Tepehuana">
-        </div>
-    </div>
-            
-<div class="bloque-cultura">
-    <div class="texto-cultura">
-        <p><strong>Menonitas:</strong> Los menonitas son una comunidad religiosa y cultural fundada en 1527 durante la Reforma Protestante. Su nombre proviene de Menno Simons y se caracterizan por el pacifismo, el bautismo de adultos y una vida basada en la comunidad, el trabajo y la autosuficiencia. Surgieron en los Países Bajos y, debido a persecuciones religiosas, migraron a distintos lugares de Europa, Rusia, Canadá y América Latina. En México, una gran comunidad llegó en 1922 desde Canadá y se estableció principalmente en Chihuahua, especialmente en Cuauhtémoc, donde destacan por sus actividades agrícolas, ganaderas y la producción de lácteos.</p>
-        <p>La vida de los menonitas puede variar según la comunidad, ya que algunos grupos conservan costumbres más tradicionales y otros están más integrados a la sociedad moderna. Muchos conservan el Plautdietsch, un dialecto del alemán bajo, como parte de su identidad cultural. Además, valoran la disciplina, la cooperación familiar, la sencillez y la ayuda mutua. También son reconocidos por productos como el queso menonita y por sus aportaciones económicas mediante técnicas de cultivo, producción lechera y comercialización agrícola.</p>
-    </div>
-    <div class="foto-cultura">
-    
-        <img src="Foto menonitas.jpg" alt="Comunidad Menonita en Chihuahua">
-    </div>
-</div>
 
-
-<div class="bloque-cultura invertido">
-    <div class="texto-cultura">
-        <p><strong>Guarijíos:</strong> Los guarijíos, también conocidos como macuráwe, son un pueblo indígena que habita principalmente en la Sierra Madre Occidental, entre el suroeste de Chihuahua y el sureste de Sonora. Su lengua pertenece a la familia yuto-nahua y es un elemento importante de su identidad cultural. Se llaman a sí mismos macuráwe o warihó, términos que significan “los que agarran tierra” o “los que andan por la tierra”. Sus tradiciones incluyen fiestas llamadas pahko, acompañadas de música con violines, arpas y percusiones, además de la tuburada, una danza y canto ritual relacionados con la naturaleza y los animales.</p>
-        <p>La economía guarijía se basa principalmente en la agricultura y la ganadería a pequeña escala, cultivando maíz, frijol, chile y calabaza. Las mujeres elaboran artesanías con palma, barro y fibras naturales, como cestos, petates y sombreros. Sus viviendas se construyen con materiales naturales como madera, palma, lodo y piedra. Además, mantienen una fuerte relación con la naturaleza y conservan conocimientos de medicina tradicional a base de plantas. Actualmente enfrentan problemas como pobreza, dificultades económicas y acceso limitado a servicios de salud y educación.</p>
-    </div>
-    <div class="foto-cultura">
-        
-        <img src="Foto guarijios.jpg" alt="Cultura Guarijía">
-         </div>
-</div>
-
-
-    <div class="bloque-cultura">
-        <div class="texto-cultura">
-            <p><strong>Pimas:</strong> Los pimas bajos de Chihuahua, conocidos como o'ob, poseen una rica herencia cultural en la Sierra Madre Occidental. Habitan principalmente en zonas montañosas de municipios como Temósachic y Madera, donde mantienen una fuerte identidad comunitaria. Su lengua pertenece a la familia yutoazteca y actualmente se encuentra en peligro de desaparición.</p>
-            <p>Sus creencias combinan el catolicismo con tradiciones prehispánicas relacionadas con la naturaleza. Una de sus ceremonias más importantes es el Yúmare, un rito sagrado en el que realizan cantos y danzas para agradecer las cosechas y pedir lluvias. Además, viven principalmente de la agricultura de autoconsumo, destacan por sus artesanías en madera y acostumbran compartir el tesgüino, una bebida fermentada de maíz, durante sus celebraciones y festividades.</p>
-        </div>
-        <div class="foto-cultura">
-            
-            <img src="Foto pimas.jpg" alt="Ceremonia tradicional de la cultura Pima">
-        </div>
-    </div>
-
-    
-    <div class="bloque-cultura invertido">
-        <div class="texto-cultura">
-            <p><strong>Le Barón:</strong> La Colonia Le Barón es un asentamiento ubicado en el norte de México, en el estado de Chihuahua, fundado originalmente por una rama fundamentalista del mormonismo. Fue establecida alrededor de 1924 por Alma Dayer LeBarón, después de que algunos miembros migraran desde Estados Unidos debido a la prohibición de la poligamia a finales del siglo XIX. Estas familias aprovecharon las políticas de colonización impulsadas por el gobierno de Porfirio Díaz para establecerse en México.</p>
-            <p>Con el paso de los años, la comunidad experimentó cambios culturales y divisiones religiosas. Actualmente, la poligamia ha disminuido considerablemente entre las nuevas generaciones. La mayoría de sus habitantes poseen doble nacionalidad, mexicana y estadounidense, y utilizan tanto el inglés como el español en su vida diaria. Además, la colonia es reconocida por su importancia agrícola y su desarrollo económico en la región.</p>
-        </div>
-        <div class="foto-cultura">
-            <!-- RECUERDA: Cambia "lebaron.jpg" por tu archivo real -->
-            <img src="Foto lebaron.jpg" alt="Comunidad LeBarón en Chihuahua">
-        </div>
-    </div>
-
-</section>
-      
+    </section> 
+       
         <section id="conclusion" class="seccion-pagina">
             <h2>Conclusión del Proyecto</h2>
             <hr style="background-color: #C84B31; height: 3px; border: none; margin: 20px 0;">
-            <p>Al conocer más de cerca a los rarámuri, los ódami, los pimas, los guarijíos, los menonitas y la comunidad Le Barón, nos damos cuenta de la gran riqueza cultural que existe en el estado de Chihuahua. Cada uno de estos grupos tiene su propia historia, forma de ver el mundo y tradiciones únicas, pero todos comparten algo muy valioso: un profundo amor y respeto por su tierra, y un gran deseo de mantener vivas sus costumbres a lo largo del tiempo.
-            </p>
-            <p>Los pueblos originarios —rarámuri, tepehuanos, pimas y guarijíos— han vivido en estas tierras desde hace siglos. Se han adaptado a los terrenos difíciles de la sierra, construyendo sus casas con lo que la naturaleza les ofrece, aprovechando sus recursos para trabajar la tierra, crear artesanías increíbles y alimentar a sus familias. Su identidad está muy ligada a su idioma y a la naturaleza, a la que cuidan y honran en cada fiesta o ritual, mezclando creencias antiguas con elementos que llegaron con el paso de la historia. A pesar de los retos que enfrentan hoy en día, como la falta de servicios o dificultades económicas, siguen luchando con fuerza para no perder lo que los hace únicos y para enseñar sus tradiciones a las nuevas generaciones.
-            </p>
-            <p>Por su parte, los menonitas y la comunidad Le Barón, aunque llegaron en épocas más recientes, también forman una parte fundamental de esta diversidad. Con sus creencias, su forma de vida y su gran habilidad para la agricultura y la ganadería, han aportado mucho al desarrollo de la región, compartiendo sus productos y sus formas de organización comunitaria.
-            </p>
-            <p>En conjunto, estas culturas nos muestran que la identidad de Chihuahua es muy variada y especial. Cada grupo, a su manera, ha dejado su huella en el territorio y en la historia, demostrando que es posible convivir, conservar lo propio y enriquecerse mutuamente. Preservar estas tradiciones es cuidar parte de nuestra propia historia y entender mejor el mundo en el que vivimos.
-            </p>
-         
-
-
-<style>
-  .contenedor-foto-conclusion {
-    width: 100%;
-    text-align: center;
-    margin-top: 35px;     
-    margin-bottom: 15px;  
-  }
-
-  .contenedor-foto-conclusion img {
-    width: 100%;
-    max-width: 700px;     
-    height: auto;         
-    border-radius: 6px;   
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
-</style>
-
-
-<div class="contenedor-foto-conclusion">
-  <!-- RECUERDA: Cambia "conclusion_chihuahua.jpg" por el nombre exacto de tu archivo -->
-  <img src="Foto conclusion.jpg" alt="Unión cultural en Chihuahua">
-</div>
-
-          
-        </section>
-
-      
-        <section id="informacion_academica" class="seccion-pagina">
-            <h2>Información Académica</h2>
-            <hr style="background-color: #C84B31; height: 3px; border: none; margin: 20px 0;">
-           
-<style>
-  .zona-logos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 25px;          
-  }
-
-  .zona-logos img {
-    height: 150px;                   
-    width: auto;
-  }
-</style>
-
-
-<div class="zona-logos">
-  
-  <img src="Foto escuela.jpg" alt="Logo Colegio de Bachilleres">
-  
-  
-  <img src="Foto plantel.png" alt="Logo Plantel">
-</div>
-
-            <p><strong>Escuela:</strong> Colegio de Bachilleres  del Estado de Chihuahua</p>
-            <p><strong>Materia:</strong> Cultura Digital 2</p>
-            <p><strong>Grupo:</strong> 204 - Segundo Semestre</p>
+            <p>Al conocer más de cerca a los rarámuri, los ódami, los pimas, los guarijíos, los menonitas y la comunidad Le Barón, nos damos cuenta de la gran riqueza cultural que existe en el estado de Chihuahua. Cada uno de estos grupos tiene su propia historia, forma de ver el mundo y tradiciones únicas, pero todos comparten algo muy valioso: un profundo amor y respeto por su tierra, y un gran deseo de mantener vivas sus costumbres a lo largo del tiempo.</p>
+            <p>Los pueblos originarios —rarámuri, tepehuanos, pimas y guarijíos— han vivido en estas tierras desde hace siglos. Se han adaptado a los terrenos difíciles de la sierra, construyendo sus casas con lo que la naturaleza les ofrece, aprovechando sus recursos para trabajar la tierra, crear artesanías increíbles y alimentar a sus familias. Su identidad está muy ligada a su idioma y a la naturaleza, a la que cuidan y honran en cada fiesta o ritual, mezclando creencias antiguas con elementos que llegaron con el paso de la historia. A pesar de los retos que enfrentan hoy en día, como la falta de servicios o dificultades económicas, siguen luchando con fuerza para no perder lo que los hace únicos y para enseñar sus tradiciones a las nuevas generaciones.</p>
+            <p>Por su parte, los menonitas y la comunidad Le Barón, aunque llegaron en épocas más recientes, también forman una parte fundamental de esta diversidad. Con sus creencias, su forma de vida y su gran habilidad para la agricultura y la ganadería, han aportado mucho al desarrollo de la región, compartiendo sus productos y sus formas de organización comunitaria.</p>
+            <p>En conjunto, estas culturas nos muestran que la identidad de Chihuahua es muy variada y especial. Cada grupo, a su manera, ha dejado su huella en el territorio y en la historia, demostrando que es posible convivir, conservar lo propio y enriquecerse mutuamente. Preservar estas tradiciones es cuidar parte de nuestra propia historia y entender mejor el mundo en el que vivimos.</p>
             
-            <p><strong>Lista de Integrantes:</strong></p>
-            <ul>
-                <li>Escobedo Reyes Alison Guadalupe(lider de equipo) - Editor de pagina</li>
-                <li>Saenz Ochoa Lia Sofia- Editor de pagina</li>
-                <li>Fernandez Muñoz Cielo Valeria - Investigador de cultura tepehuana</li>
-                <li>Aguilar Salinas Lia Alejandra - Investigador de las culturas guarijía y menonita</li>
-                <li>Dorado Luz Regina - Investigador de cultura tarahumara</li>
-                <li>Gonzales Mata Luis Angel - Investigador de cultura lebarona</li>
-                <li>Montiel Parra Axel Noel - Investigador de cultura pima</li>
-                <li>Batrez Aldaba Maria Paula - Encargado de la introduccion</li>
-                <li>Escobedo Ortiz Fernanda Jimena - Encargado de la conclusion</li>
+            <style>
+              .contenedor-foto-conclusion {
+                width: 100%;
+                text-align: center;
+                margin-top: 35px;     
+                margin-bottom: 15px;  
+              }
+              .contenedor-foto-conclusion img {
+                width: 100%;
+                max-width: 700px;   
+                height: auto;         
+                border-radius: 6px;   
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+              }
+            </style>
+
+           
+            <div class="contenedor-foto-conclusion">
+             
+              <img src="Foto conclusion.jpg" alt="Unión cultural en Chihuahua">
+            </div>
+        </section>
+     
+        <section id="creditos" class="seccion-pagina">
+            <h2>Créditos y Colaboración</h2>
+            <hr style="background-color: #C84B31; height: 3px; border: none; margin: 20px 0;">
+            
+            <p style="font-size: 1.1rem; color: #1e3163; font-weight: bold; margin-bottom: 15px;">
+                Organización del Equipo de Trabajo:
+            </p>
+
+            
+            <ul style="line-height: 1.8; margin-bottom: 40px;">
+                <li><strong>Aguilar Salinas Lia Alejandra</strong> — Investigador de las culturas guarijía y menonita</li>
+                <li><strong>Batrez Aldaba Maria Paula</strong> — Encargado de la introducción</li>
+                <li><strong>Dorado Luz Regina</strong> — Investigador de cultura tarahumara</li>
+                <li><strong>Escobedo Ortiz Fernanda Jimena</strong> — Encargado de la conclusión</li>
+                <li><strong>Escobedo Reyes Alison Guadalupe</strong> (Líder de equipo) — Editor de informacion</li>
+                <li><strong>Fernandez Muñoz Cielo Valeria</strong> — Investigador de cultura tepehuana</li>
+                <li><strong>Gonzales Mata Luis Angel</strong> — Investigador de cultura lebarona</li>
+                <li><strong>Montiel Parra Axel Noel</strong> — Investigador de cultura pima</li>
+                <li><strong>Saenz Ochoa Lia Sofia</strong> — Editor de página</li>
+            </ul>
+
+            <h3 style="color: #1e3163; margin-top: 30px;">Bibliografía y Fuentes de Información</h3>
+            <hr style="background-color: #1e3163; height: 1px; border: none; margin: 10px 0 20px 0;">
+         
+            <ul style="line-height: 1.6; color: #555;">
+                          
+            <ul style="line-height: 1.6; color: #555;">
+                <li>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (CONABIO). "Capital natural de México: Conocimiento tradicional, áreas protegidas y sustentabilidad". Sistema Nacional de Información sobre Biodiversidad. Disponible en <a href="https://biodiversidad.gob.mx" target="_blank" style="color: #1e3163;">CONABIO Oficial</a>.</li>
+                <li>Organización de las Naciones Unidas (ONU). "Los pueblos indígenas y la protección del medio ambiente y la biodiversidad". Centro de Información de las Naciones Unidas. Disponible en <a href="https://un.org" target="_blank" style="color: #1e3163;">ONU Pueblos Indígenas</a>.</li>
+                <li>Instituto Nacional de los Pueblos Indígenas (INPI). "Etnografía del pueblo tarahumara (rarámuri)". Portal del Gobierno de México. Disponible en <a href="https://www.gob.mx" target="_blank" style="color: #1e3163;">Gob.mx/INPI</a>.</li>
+                <li>Universidad Nacional Autónoma de México (UNAM). "Tarahumaras – Rarámuri: Información Etnográfica". Repositorio del Instituto de Investigaciones Sociales. Disponible en <a href="https://unam.mx" target="_blank" style="color: #1e3163;">Repositorio IIS-UNAM</a>.</li>
+                <li>Instituto Nacional de los Pueblos Indígenas (INPI). "Ódami / Tepehuano del norte - Etnografía". Atlas de los Pueblos Indígenas de México. Disponible en <a href="https://inpi.gob.mx" target="_blank" style="color: #1e3163;">Catálogo Oficial INPI</a>.</li>
+                <li>Instituto Nacional de Lenguas Indígenas (INALI). "Prontuario de la lengua Ódami (Tepehuano del Norte)". Portal de Lenguas Indígenas Nacionales. Disponible en <a href="https://inali.gob.mx" target="_blank" style="color: #1e3163;">Prontuarios INALI</a>.</li>
+                <li>Gobierno del Estado de Chihuahua. "Historia de la comunidad menonita en Chihuahua". Portal Oficial del Estado. Disponible en <a href="https://chihuahua.gob.mx" target="_blank" style="color: #1e3163;">Chihuahua.gob.mx</a>.</li>
+                <li>Instituto Nacional de Antropología e Historia (INAH). "Cien años de la llegada de la comunidad menonita a México". Secretaría de Cultura. Disponible en <a href="https://inah.gob.mx" target="_blank" style="color: #1e3163;">INAH Oficial</a>.</li>
+                <li>Instituto Nacional de los Pueblos Indígenas (INPI). "Guarijíos / Macuráwe - Etnografía". Atlas de los Pueblos Indígenas de México. Disponible en <a href="https://inpi.gob.mx" target="_blank" style="color: #1e3163;">Catálogo Oficial INPI</a>.</li>
+                <li>Secretaría de Cultura. "Etnografía del pueblo guarijío: Tradiciones y la Tuburada". Sistema de Información Cultural (SIC). Disponible en <a href="https://cultura.gob.mx" target="_blank" style="color: #1e3163;">SIC Cultura México</a>.</li>
+                <li>Instituto Nacional de los Pueblos Indígenas (INPI). "Pimas / O'ob - Etnografía de la Sierra Madre". Atlas de los Pueblos Indígenas de México. Disponible en <a href="https://inpi.gob.mx" target="_blank" style="color: #1e3163;">Catálogo Oficial INPI</a>.</li>
+                <li>Instituto Nacional de Antropología e Historia (INAH). "El Yúmare y las tradiciones de los Pimas Bajos de Chihuahua". Coordinación Nacional de Antropología. Disponible en <a href="https://inah.gob.mx" target="_blank" style="color: #1e3163;">INAH Antropología</a>.</li>
+                <li>El Colegio de la Frontera Norte (COLEF). "Asentamientos religiosos y desarrollo agrícola en el norte de Chihuahua: El caso LeBarón". Repositorio Institucional. Disponible en <a href="https://colef.mx" target="_blank" style="color: #1e3163;">COLEF Oficial</a>.</li>
+                <li>Centro de Investigaciones y Estudios Superiores en Antropología Social (CIESAS). "Mormonismo y procesos de colonización en México". Repositorio de Antropología Social. Disponible en <a href="https://ciesas.edu.mx" target="_blank" style="color: #1e3163;">CIESAS Digital</a>.</li>
+                <li>Secretaría de Cultura del Estado de Chihuahua. "Diversidad cultural y patrimonio inmaterial de las comunidades de Chihuahua". Portal Oficial de Cultura. Disponible en <a href="https://chihuahua.gob.mx" target="_blank" style="color: #1e3163;">Cultura Chihuahua</a>.</li>
+                <li>El Colegio de Chihuahua (COLECH). "Procesos de identidad, convivencia e interculturalidad en el norte de México". Repositorio de Investigación Institucional. Disponible en <a href="https://colech.edu.mx" target="_blank" style="color: #1e3163;">COLECH Digital</a>.</li>
             </ul>
         </section>
 
     </main>
-
-    
     <footer>
-        <p>Fecha de Entrega: 21 de Mayo 2026</p>
+        <div style="max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px;">
+            <p style="margin: 0; font-weight: bold;">Segundo Semestre | Grupo: 204</p>
+            <p style="margin: 0;">Docente: Maria de Lourdes Carrasco Acosta</p>
+            <p style="margin: 0;">Fecha de Entrega: 21 de Mayo de 2026</p>
+            
+            <div style="margin-top: 15px; font-size: 12px; opacity: 0.9; border-top: 1px solid rgba(244, 234, 225, 0.3); padding-top: 10px;">
+                <p style="margin: 0; font-weight: bold; margin-bottom: 5px;">Integrantes del Proyecto:</p>
+                <p style="margin: 0; line-height: 1.5;">
+                    L. A. Aguilar Salinas | M. P. Batrez Aldaba | L. R. Dorado Luz | A. G. Escobedo Reyes | F. J. Escobedo Ortiz | C. V. Fernandez Muñoz | L. A. Gonzales Mata | A. N. Montiel Parra | L. S. Saenz Ochoa
+                </p>
+            </div>
+        </div>
     </footer>
-
-    
     <script>
         function cambiarPestana(idSeccion, evento) {
+            
             const secciones = document.querySelectorAll('.seccion-pagina');
             secciones.forEach(sec => sec.classList.remove('active'));
 
+        
             const botones = document.querySelectorAll('nav button');
             botones.forEach(btn => btn.classList.remove('active'));
 
